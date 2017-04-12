@@ -76,16 +76,19 @@ Created by Ville Suoraniemi using templates from https://www.w3schools.com/w3css
             <input class="w3-input w3-border" type="number" name="amount" value="1" min="1" max="99">
 
 
-            <p><button class="w3-button w3-block w3-green w3-left-align" type="button" onclick="addToOrder()"><i class="fa fa-check-square-o w3-margin-right"></i> Add to Order!</button></p>
+            <p><button class="w3-button w3-block w3-green w3-left-align" type="button" onclick="addToOrder()">
+                <i class="fa fa-check-square-o w3-margin-right"></i> Add to Order!</button></p>
         </form>
 
-        <p><a href="orders.html" class="w3-button w3-block w3-blue w3-left-align"><i class="fa fa-history w3-margin-right"></i> Track Orders</a></p>
+        <p><a href="orders.html" class="w3-button w3-block w3-blue w3-left-align">
+            <i class="fa fa-history w3-margin-right"></i> Track Orders</a></p>
 
     </div>
 
 </nav>
 
-<div class="w3-main w3-white" style="margin-left: 360px;;margin-right: 100px;width: auto;">
+<div class="w3-container w3-white" style="margin-left: 310px; margin-right: 50px; min-width: 500px;
+                                            max-width: 1000px; width: auto">
 
     <!-- Table that visualises the order -->
     <div class="w3-responsive w3-card-4">
@@ -96,8 +99,8 @@ Created by Ville Suoraniemi using templates from https://www.w3schools.com/w3css
             </tr>
             <tr class="w3-theme">
                 <td><b>ProductID</b></td>
-                <td><b>Amount</b></td>
-                <td></td>
+                <td style="width: 20%"><b>Amount</b></td>
+                <td style="width: 10%"></td>
             </tr>
             </thead>
             <tbody id="tbody">
@@ -106,7 +109,8 @@ Created by Ville Suoraniemi using templates from https://www.w3schools.com/w3css
         </table>
     </div>
 
-    <p><button class="w3-button w3-block w3-green w3-left-align" type="button"><i class="fa fa-check-square-o w3-margin-right"></i> Submit Order!</button></p>
+    <p><button class="w3-button w3-block w3-green w3-left-align" type="button">
+        <i class="fa fa-check-square-o w3-margin-right"></i> Submit Order!</button></p>
 
 </div>
 
