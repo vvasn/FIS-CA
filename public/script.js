@@ -22,6 +22,25 @@ function addToOrder() {
 
         var table = document.getElementById("tbody");
         var amount = document.getElementsByName("amount")[0].value;
+
+        for (var r = 0, n = table.rows.length; r < n; r++) {
+
+            for (var c = 0, m = table.rows[r].cells.length; c < m; c++) {
+
+                var check3 = table.rows[r].cells[c].innerHTML;
+
+                if (check3 == productId){
+
+                    table.rows[r].cells[1].innerHTML = parseInt(table.rows[r].cells[1].innerHTML) + parseInt(amount);
+                    document.getElementById("orderForm").reset();
+                    return;
+
+                }
+
+            }
+
+        }
+
         var row = table.insertRow(-1);
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
